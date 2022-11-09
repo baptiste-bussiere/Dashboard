@@ -14,7 +14,7 @@
       <div class="information">
         <img src="" alt="">
         <p>Welcome back</p>
-        <span>{{post}}</span>
+        <span>CAMILLIA</span>
       </div>
       <button>Sign Out</button>
     </div>

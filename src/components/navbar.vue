@@ -1,15 +1,25 @@
 <template>
-    <div>
+    <div class="navbar">
         <nav>
-            <a href="">bankName</a>
+            <a href="" v-if="name == 'chien' ">bankName</a>
+            <a href="" v-else>prout</a>
+
             <h1>{{name}}</h1>
             <ul>
                 <li>
-                    <a href="">R</a>
+                    <a href=""><span class="material-symbols-outlined">
+                        live_help
+                        </span>
+                        
+                        </a>
                 </li>   
                 <li>
-                        <a href="">N</a></li>
-                <li><a href="">S</a></li>
+                        <a href=""><span class="material-symbols-outlined">
+                            notifications
+                            </span></a></li>
+                <li><a href=""><span class="material-symbols-outlined">
+                    settings
+                    </span></a></li>
             </ul>
         </nav>
     </div>
@@ -20,7 +30,7 @@ export default {
     
     data(){
         return{
-            name:"coucou"          
+            name:"chin"          
         }
     }
 }
