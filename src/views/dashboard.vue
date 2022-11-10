@@ -21,12 +21,44 @@
                        
                         <div class="balance_right">
                             <div class="header_left">
-                                <h1>My Credits cards</h1>
-                                <button><span class="material-symbols-outlined">
-                                    more_horiz
+                            <span>income</span>
+                            <h1>$ 3,345.<span>21</span></h1>
+                            <div v-if="pourcentage_spend > 0" class="state green">
+                                <span class="material-symbols-outlined">
+                                    north_east
                                     </span>
-                                    </button>
-    
+                                  
+                                        
+                                     {{pourcentage_in}}%
+                            </div>
+                            <div v-else class="state red">
+                                <span class="material-symbols-outlined">
+                                    south_east
+                                    </span>
+                                  
+                                        
+                                     {{pourcentage_in}}%
+                            </div>
+                            <hr>
+                            <span>spending</span>
+                            <h1>$ 1,335.<span>97</span></h1>
+                            <div v-if="pourcentage_spend > 0" class="state green">
+                                <span class="material-symbols-outlined">
+                                    north_east
+                                    </span>
+                                  
+                                        
+                                     {{pourcentage_spend}}%
+                            </div>
+                            <div v-else class="state red">
+                                <span class="material-symbols-outlined">
+                                    south_east
+                                    </span>
+                                  
+                                        
+                                     {{pourcentage_spend}}%
+                            </div>
+                         
                             </div>
                         </div>
                     </div>
@@ -42,7 +74,36 @@
                                 </button>
 
                         </div>
-                        <div class="main_card">coucou</div>
+                        <div class="main_card">
+                            <div class="cb_card" v-if="click == false">
+                                <img src="@/assets/img/mastercard.png" alt="">
+                           <p>
+                            5354 5627 **** ****  <button @click="showNumber()"><span class="material-symbols-outlined">
+                                visibility
+                                </span></button>
+                           </p> 
+                         
+                            </div>   
+                            
+                            <div class="cb_card" v-else>
+                                <img src="@/assets/img/mastercard.png" alt="">
+                           <p>
+                            5354 5627 2245 7834  <button @click="hideNumber()"><span class="material-symbols-outlined">
+                                visibility_off
+                                </span></button>
+                           </p> 
+                         
+                            </div>
+
+                            <div class="add_card">
+                                New Card ? 
+                                <button>
+                                    <span class="material-symbols-outlined">
+                                        add
+                                        </span>
+                                </button>
+                            </div>
+                        </div>
 
                     </div>
                     <div class="card">
@@ -85,9 +146,38 @@ export default {
     },
     data(){
         return{
-            coucou:"coucou"
+            coucou:"coucou",
+            pourcentage_spend: 1,
+            pourcentage_in:2.3,
+            click: false
+
         }
+    },
+    methods:{
+       showNumber(){
+       
+
+
+            this.click = true
+            console.log(this.click)
+
+ 
+            
+    },
+    hideNumber(){
+       
+
+       
+           this.click = false
+       
+       console.log(this.click)
+
+   
+           
+   } 
     }
+    
+
 }
 </script>
 
