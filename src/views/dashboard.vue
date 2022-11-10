@@ -8,10 +8,26 @@
             <div class="dash">
                 <section>
                     <div class="balance">
-                        <div class="balance_left"> partie blanche</div>
+                        <div class="balance_left">
+                            <div class="header_left">
+                                <h1>My Balance</h1>
+                                <button><span class="material-symbols-outlined">
+                                    more_horiz
+                                    </span>
+                                    </button>
+    
+                            </div>
+                        </div>
                        
                         <div class="balance_right">
-                            partie noir
+                            <div class="header_left">
+                                <h1>My Credits cards</h1>
+                                <button><span class="material-symbols-outlined">
+                                    more_horiz
+                                    </span>
+                                    </button>
+    
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -20,7 +36,10 @@
                     <div class="card">
                         <div class="header_card">
                             <h1>My Credits cards</h1>
-                            <button>...</button>
+                            <button><span class="material-symbols-outlined">
+                                more_horiz
+                                </span>
+                                </button>
 
                         </div>
                         <div class="main_card">coucou</div>
@@ -29,19 +48,21 @@
                     <div class="card">
                         <div class="header_card">
                             <h1>Last Transactions</h1>
-                            <button>--></button>
+                            <button><span class="material-symbols-outlined">
+                                arrow_right_alt
+                                </span></button>
                         </div>
                         <div class="main_card">coucou</div>
                     </div>
                 </section>
             </div>
             <div class="news">
-news
+
                 <div class="card">
-newsssss
+
                 </div>
                 <div class="card">
-                    newssss
+             
                 </div>
             </div>
         </div>
