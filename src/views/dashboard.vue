@@ -109,11 +109,41 @@
                     <div class="card">
                         <div class="header_card">
                             <h1>Last Transactions</h1>
-                            <button><span class="material-symbols-outlined">
+                            <button><span class="icon material-symbols-outlined">
                                 arrow_right_alt
                                 </span></button>
                         </div>
-                        <div class="main_card">coucou</div>
+                        <div class="main_card">
+                            <div class="row_transaction">
+                                <span class="icon material-symbols-outlined">
+                                    subscriptions
+                                    </span>
+                            <p>blala <br> <span>blaallaal</span></p>
+                            <p class="price">$5.5</p>
+                            </div>
+                            <div class="row_transaction">
+                                <span class="icon material-symbols-outlined">
+                                    subscriptions
+                                    </span>
+                            <p>blala <br> <span>blaallaal</span></p>
+                            <p class="price">$5.5</p>
+                            </div>
+                            <div class="row_transaction">
+                                <span class="icon material-symbols-outlined">
+                                    subscriptions
+                                    </span>
+                            <p>blala <br> <span>blaallaal</span></p>
+                            <p class="price">$5.5</p>
+                            </div>
+                            <div class="row_transaction">
+                                <span class="icon material-symbols-outlined">
+                                    subscriptions
+                                    </span>
+                            <p>blala <br> <span>blaallaal</span></p>
+                            <p class="price">$5.5</p>
+                            </div>
+                            
+                        </div>
                     </div>
                 </section>
             </div>
@@ -174,11 +204,11 @@ export default {
 
    
            
-   } 
-    }
+   },
+
     
 
-}
+}}
 </script>
 
 

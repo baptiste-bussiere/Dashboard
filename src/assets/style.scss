@@ -5,14 +5,15 @@ body {
     font-family: 'Mulish', sans-serif;
 }
 
+button {
+    user-select: none;
+}
+
 #app {
-    padding: 1em;
     background-color: #CECECE;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     .navbar {
-        border-radius: 1.4em 1.4em 0 0;
         background-color: #232323;
         color: #fff;
         border-bottom: 1px solid #565656;
@@ -43,11 +44,13 @@ body {
     .main {
         background-color: #232323;
         display: flex;
-        border-radius: 0 0 1.4em 1.4em;
         .dashboard {
             display: flex;
             justify-content: space-between;
             width: 80%;
+            overflow: hidden;
+            overflow-y: scroll;
+            height: calc(100vh - 69.83px);
             .dash {
                 width: 70%;
                 flex-direction: column;
@@ -61,7 +64,6 @@ body {
                     }
                     margin: 1em;
                     flex-grow: 6;
-                    height: 50%;
                     display: flex;
                     .card {
                         display: flex;
@@ -98,11 +100,26 @@ body {
                             flex-grow: 100;
                             justify-content: space-around;
                             flex-direction: column;
+                            .row_transaction {
+                                display: flex;
+                                justify-content: space-between;
+                                color: #fff;
+                                align-items: center;
+                                .icon {
+                                    background-color: #3c45b1;
+                                    border-radius: 0.6em;
+                                    height: 2em;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    width: 2em;
+                                }
+                            }
                             .cb_card {
                                 background: linear-gradient(212deg, rgba(100, 125, 238, 1) 0%, rgba(127, 83, 172, 1) 100%);
                                 display: flex;
                                 width: 100%;
-                                height: 60%;
+                                height: 12em;
                                 position: relative;
                                 border-radius: 2em;
                                 color: #fff;
@@ -137,13 +154,14 @@ body {
                                 padding: 0.5em 0;
                                 justify-content: center;
                                 button {
-                                    border-radius: 0.7em;
+                                    border-radius: 0.5em;
                                     margin: 0.5em;
                                     color: #fff;
                                     cursor: pointer;
                                     transition: 250ms;
                                     border: none;
                                     display: flex;
+                                    padding: 0.5em;
                                     align-items: center;
                                     justify-content: center;
                                     background-color: #5564FF;
@@ -262,9 +280,7 @@ body {
             display: flex;
             flex-direction: column;
             width: 20%;
-            height: 100vh;
             justify-content: space-between;
-            border-radius: 0 0 1.4em 1.4em;
             .welcome {
                 display: flex;
                 flex-direction: column;

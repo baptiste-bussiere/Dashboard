@@ -35,6 +35,7 @@
   </div>
 </template>
 <script scoped>
+
 export default {
   data(){
     return{
@@ -52,10 +53,13 @@ export default {
       fetch('https://randomuser.me/api/')
       .then(response => response.json())
       .then(data => this.post = data)
+      console.log(this.post)
+
     }
   },
   mounted() {
     this.getData()
+
   }
 
 }

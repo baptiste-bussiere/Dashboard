@@ -1,10 +1,10 @@
 <template>
     <div class="navbar">
         <nav>
-            <a href="" v-if="name == 'chien' ">bankName</a>
-            <a href="" v-else>prout</a>
+            <a href="" >bankName</a>
+          
 
-            <h1>{{name}}</h1>
+            <h1>Dashboard</h1>
             <ul>
                 <li>
                     <a href=""><span class="material-symbols-outlined">
@@ -30,7 +30,7 @@ export default {
     
     data(){
         return{
-            name:"chien"          
+                     
         }
     }
 }
