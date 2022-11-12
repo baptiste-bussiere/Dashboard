@@ -30,7 +30,7 @@
       </div>
       <button> <span class="material-symbols-outlined">
         logout
-        </span>Sign Out</button>
+        </span>Change person</button>
     </div>
   </div>
 </template>

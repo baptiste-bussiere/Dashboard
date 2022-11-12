@@ -15,15 +15,34 @@
                                     more_horiz
                                     </span>
                                     </button>
-    
+                                
                             </div>
+                            <div class="main_left">
+                                <div class="money">                                <h1>$ 3978<span>.22</span><p>usd</p></h1>
+                                </div>
+                                <div class="iban">
+                                    <span class="material-symbols-outlined">
+                                        content_copy
+                                        </span>
+                                        <p>FR76 3000 1007 9412 3456 7890 185</p>
+                                </div> 
+                                 <div class="button">
+                            <button>Send <span class="material-symbols-outlined">
+                                east
+                                </span></button>
+                           
+
+                                </div>
+
+                            </div>
+
                         </div>
                        
                         <div class="balance_right">
                             <div class="header_left">
                             <span>income</span>
                             <h1>$ 3,345.<span>21</span></h1>
-                            <div v-if="pourcentage_spend > 0" class="state green">
+                            <div v-if="pourcentage_in > 0" class="state green">
                                 <span class="material-symbols-outlined">
                                     north_east
                                     </span>
@@ -177,7 +196,7 @@ export default {
     data(){
         return{
             coucou:"coucou",
-            pourcentage_spend: 1,
+            pourcentage_spend: -1,
             pourcentage_in:2.3,
             click: false
 
