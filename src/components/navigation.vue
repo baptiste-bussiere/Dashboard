@@ -29,7 +29,7 @@
        
       </div>
       <button> <span class="material-symbols-outlined">
-        logout
+        change_circle
         </span>Change person</button>
     </div>
   </div>
