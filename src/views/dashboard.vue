@@ -3,7 +3,6 @@
       <navbar></navbar>   
        <div class="main">
       <navigation></navigation>
-      <canvas id="myChart" width="400" height="400"></canvas>
 
         <div class="dashboard">
             <div class="dash">
